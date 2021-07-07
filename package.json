@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "ts-algorithms",
+  "name": "@hyrul/ts-algorithms",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",

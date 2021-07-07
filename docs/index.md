@@ -1,7 +1,7 @@
 ---
 hero:
   title: ts-algorithms
-  desc: ts-algorithms site example
+  desc: 基于 typescript 的数据结构和算法库
   actions:
     - text: Getting Started
       link: /components
@@ -18,4 +18,4 @@ features:
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
 
-## Hello ts-algorithms!
+##

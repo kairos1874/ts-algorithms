@@ -1,6 +1,9 @@
-import { defaultEquals, IEqualsFunction } from '../util';
-import { Node } from './models/linked-list-models';
+import { defaultEquals, IEqualsFunction } from '../../util';
+import { Node } from '../models/linked-list-models';
 
+/**
+ * 链表
+ */
 export default class LinkedList<T> {
   protected count = 0;
   protected head: Node<T> | undefined;
@@ -47,8 +50,10 @@ export default class LinkedList<T> {
         this.head = node;
       } else {
         const previous = this.getElementAt(index - 1);
-        node.next = previous.next;
-        previous.next = node;
+        if (previous != null) {
+          node.next = previous.next;
+          previous.next = node;
+        }
       }
       this.count++;
       return true;
