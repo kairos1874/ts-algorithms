@@ -8,8 +8,7 @@ export default () => {
   // debugger
 
   const linkedList = new LinkedList();
-  linkedList.insert(5);
+  linkedList.insert(5, 1);
 
-  debugger;
-  return <h1 style={{ position: 'fixed', top: 0, left: 0 }}>我不会飞出去</h1>;
+  return <div>this is playground page</div>;
 };
