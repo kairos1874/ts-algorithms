@@ -25,5 +25,5 @@ import { LinkedList } from '@hyrul/ts-algorithms';
 
 const linkedList = new LinkedList();
 
-link.push(1);
+linkedList.push(1);
 ```

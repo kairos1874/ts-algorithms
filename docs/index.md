@@ -3,7 +3,7 @@ hero:
   title: ts-algorithms
   desc: 基于 typescript 的数据结构和算法库
   actions:
-    - text: Getting Started
+    - text: 快速开始
       link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
@@ -17,5 +17,3 @@ features:
     desc: Balabala
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
-
-##
