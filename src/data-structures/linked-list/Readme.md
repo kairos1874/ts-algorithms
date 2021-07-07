@@ -21,7 +21,7 @@ group:
 ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
 
 ```ts
-import { LinkedList } from '@hyrul/ts-algorithms';
+import { LinkedList } from '@hyrule/ts-algorithms';
 
 const linkedList = new LinkedList();
 

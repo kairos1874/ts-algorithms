@@ -50,10 +50,8 @@ export default class LinkedList<T> {
         this.head = node;
       } else {
         const previous = this.getElementAt(index - 1);
-        if (previous != null) {
-          node.next = previous.next;
-          previous.next = node;
-        }
+        node.next = previous.next;
+        previous.next = node;
       }
       this.count++;
       return true;
