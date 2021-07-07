@@ -1,5 +1,5 @@
 import { defaultEquals, IEqualsFunction } from '../../util';
-import { Node } from '../models/linked-list-models';
+import { Node } from './LinkedListNode';
 
 /**
  * 链表
@@ -50,8 +50,10 @@ export default class LinkedList<T> {
         this.head = node;
       } else {
         const previous = this.getElementAt(index - 1);
-        node.next = previous.next;
-        previous.next = node;
+        if (previous != null) {
+          node.next = previous.next;
+          previous.next = node;
+        }
       }
       this.count++;
       return true;
@@ -64,14 +66,14 @@ export default class LinkedList<T> {
       let current = this.head;
 
       if (index === 0) {
-        this.head = current.next;
+        this.head = (current as Node<T>).next;
       } else {
         const previous = this.getElementAt(index - 1);
-        current = previous.next;
-        previous.next = current.next;
+        current = (previous as Node<T>).next;
+        (previous as Node<T>).next = (current as Node<T>).next;
       }
       this.count--;
-      return current.element;
+      return (current as Node<T>).element;
     }
     return undefined;
   }
