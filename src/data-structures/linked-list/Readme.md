@@ -79,7 +79,7 @@ players.remove(23) // 移除 Jack
 
 ## 方法
 
-#### push(...)
+### push(...)
 
 ```ts
 push(element: T): void
@@ -87,7 +87,7 @@ push(element: T): void
 
 往链尾推入一个元素
 
-#### getElementAt(...)
+### getElementAt(...)
 
 ```ts
 getElementAt(index: number): T | undefined
@@ -95,7 +95,7 @@ getElementAt(index: number): T | undefined
 
 获取第 index 个元素
 
-#### insert(...)
+### insert(...)
 
 ```ts
 insert(element: T, index: number): boolean
@@ -103,7 +103,7 @@ insert(element: T, index: number): boolean
 
 往 index 的位置插入元素
 
-#### removeAt(...)
+### removeAt(...)
 
 ```ts
 removeAt(index: number): T | undefined
@@ -111,7 +111,7 @@ removeAt(index: number): T | undefined
 
 移除第 index 个元素
 
-#### remove(...)
+### remove(...)
 
 ```ts
 remove(element: T): T | undefined
@@ -119,7 +119,7 @@ remove(element: T): T | undefined
 
 移除元素，根据 constructor 中的 equalFn 来判断是那个元素的
 
-#### indexOf(...)
+### indexOf(...)
 
 ```ts
 indexOf(element: T): number
@@ -127,7 +127,7 @@ indexOf(element: T): number
 
 获取元素在链表中的位置，-1 代表不存在
 
-#### isEmpty()
+### isEmpty()
 
 ```ts
 isEmpty() : boolean
@@ -135,7 +135,7 @@ isEmpty() : boolean
 
 判断链表是否为空
 
-#### size()
+### size()
 
 ```ts
 size() : number
@@ -143,15 +143,15 @@ size() : number
 
 返回链表的元素数量，类似 Array 的 length
 
-#### getHead()
+### getHead()
 
 ```ts
-getHead() : T
+getHead() : T | undefined
 ```
 
 获取链头的元素
 
-#### clear()
+### clear()
 
 ```ts
 clear() : void
@@ -159,7 +159,7 @@ clear() : void
 
 清空链表
 
-#### toString()
+### toString()
 
 ```ts
 toString() : string
