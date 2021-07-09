@@ -1,0 +1,44 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master # default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run docs:build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./docs-dist
+
+
+# name: Build and Deploy Docs
+# on:
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+#       with:
+#         persist-credentials: false
+#     - name: Install and Build
+#       run: |
+#         npm install
+#         npm run docs:build
+#     - name: Deploy
+#       uses: JamesIves/github-pages-deploy-action@releases/v3
+#       with:
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#         BRANCH: gh-pages
+#         FOLDER: docs-dist
