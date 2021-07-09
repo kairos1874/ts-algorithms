@@ -130,7 +130,7 @@ indexOf(element: T): number
 ### isEmpty()
 
 ```ts
-isEmpty() : boolean
+isEmpty(): boolean
 ```
 
 判断链表是否为空
@@ -138,7 +138,7 @@ isEmpty() : boolean
 ### size()
 
 ```ts
-size() : number
+size(): number
 ```
 
 返回链表的元素数量，类似 Array 的 length
@@ -146,7 +146,7 @@ size() : number
 ### getHead()
 
 ```ts
-getHead() : T | undefined
+getHead(): T | undefined
 ```
 
 获取链头的元素
@@ -154,7 +154,7 @@ getHead() : T | undefined
 ### clear()
 
 ```ts
-clear() : void
+clear(): void
 ```
 
 清空链表
@@ -162,7 +162,7 @@ clear() : void
 ### toString()
 
 ```ts
-toString() : string
+toString(): string
 ```
 
 转为字符串
