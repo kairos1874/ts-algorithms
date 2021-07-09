@@ -1,7 +1,8 @@
 {
   "private": true,
-  "name": "@hyrul/ts-algorithms",
-  "version": "1.0.0",
+  "name": "@hyrule/ts-algorithms",
+  "version": "0.0.1",
+  "homepage" : "https://aishen1874.github.io/ts-algorithms",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
