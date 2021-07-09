@@ -6,6 +6,7 @@ export default defineConfig({
   logo: '/images/logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
+  base: '/ts-algorithms/',
   navs: [
     null,
     {
