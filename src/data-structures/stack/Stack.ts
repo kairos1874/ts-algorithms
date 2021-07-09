@@ -1,3 +1,6 @@
+/**
+ * 栈
+ */
 export default class Stack<T> {
   private count: number;
   private items: any;

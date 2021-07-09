@@ -20,6 +20,12 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aishen1874/ts-algorithms.git",
+    "branch": "master",
+    "platform": "github"
+  },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
