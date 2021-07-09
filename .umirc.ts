@@ -7,6 +7,7 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   base: '/ts-algorithms',
+  hash: true,
   navs: [
     null,
     {
