@@ -1,5 +1,6 @@
 ---
 title: 栈
+order: 1
 nav:
   title: 数据结构
   path: /data-structures

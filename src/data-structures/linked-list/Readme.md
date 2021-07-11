@@ -1,8 +1,10 @@
 ---
 title: 单向链表
+order: 2
 nav:
   title: 数据结构
   path: /data-structures
+
 group:
   title: 链表
   path: /linked-list
