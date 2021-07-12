@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  plugins: ['./plugin/patchRoute'],
   title: 'ts-algorithms',
   favicon: '/images/logo.png',
   logo: '/images/logo.png',
