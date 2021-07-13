@@ -1,10 +1,5 @@
 ---
-hero:
-  title: ts-algorithms
-  desc: 基于 typescript 的数据结构和算法库
-  actions:
-    - text: 快速开始
-      link: /data-structures
+gapless: true
 ---
 
-<code src="./playground.tsx"></code>
+<code src="./home/index.tsx" inline></code>
