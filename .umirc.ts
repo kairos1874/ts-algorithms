@@ -7,6 +7,13 @@ const chainWebpack = (config, { webpack }) => {
       languages: ['yaml', 'javascript', 'typescript'],
     },
   ]);
+
+  // 如果带以 !raw-loader! 开头的文件，则使用 raw-loader 来引入
+  config.module
+    .rule('raw')
+    .test(/^\!raw-loader\!/)
+    .use('raw')
+    .loader('raw-loader');
 };
 
 export default defineConfig({
