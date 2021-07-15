@@ -3,6 +3,7 @@ import styles from './index.less';
 
 import DemoList from '../components/demoList';
 import Sandbox from '../components/sandbox';
+import Toolbar from '../components/toolbar';
 
 export default () => {
   return (
@@ -12,8 +13,7 @@ export default () => {
       </div>
       <div className={styles.editor}>
         <div className={styles.toolbar}>
-          选择语言 typescript/javascript
-          <button>run</button>
+          <Toolbar />
         </div>
         <div className={styles.code}>
           <Sandbox />
